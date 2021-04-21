@@ -1,0 +1,702 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* header */
+
+/* Arrière plan body */
+section {
+    background: url(images/gim5.jpg) no-repeat;
+    background-size: cover;
+    height: calc(450vh - 10vw);
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+
+
+
+
+
+
+/* header static */
+.fancy {
+    color: #D2B48C;
+    text-align: left;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    line-height: 50px;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    font-size: 100px;
+    margin-top: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .fancy {
+        font-size:75px;
+    }
+  }
+
+@media screen and (max-width: 400px) {
+    .fancy {
+        font-size:50px;
+    }
+  }
+  
+
+nav{
+    display: flex;
+    margin-top: 30px;
+}
+nav>a{
+    display: block;
+    width: 400px;
+    background-color: #D2B48C;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+    color: #FFF;
+    margin: 1px;
+    text-decoration: none; /* Supprime le surlignage des liens hypertexte */
+}
+nav>a:hover{
+    background-color: #D2B48C;
+    color: #000;
+    transition:all 0.3s ease;
+}
+#ch{
+    display: none; /* Pour masquer le checbox */
+}
+#lab{
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(#FFF 0%,#FFF 20%,transparent 21%, transparent 40%,#FFF 41%,#FFF 60%,transparent 61%, transparent 80%,#FFF 81%, #FFF 100%);
+    margin: 4px;
+    display: none; /* Faire disparaitre le label lorsque l'écran s'acradit */
+}
+@media all and (max-width: 960px){
+    nav{
+        display: block;
+        position: absolute;
+        left: 0; /* Pour que la barre de nav occupe tout l'espace */
+        right: 0;/* Pour que la barre de nav occupe tout l'espace */
+        transform: translate(-1000px,0); /* Le menu disparait */
+        transition: all 0.9s ease;
+    }
+    nav>a{
+        width: auto;
+    }
+    #ch:checked+nav{
+        transform: translate(0,0); /* Le menu apparait */
+        transition: all 0.9s ease;
+    }
+    #lab{
+        display: block;
+    }
+}
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #A0522D;
+    height: 300px;
+
+}
+
+
+/* Effet scroll Accueil avec texte 1*/
+section-2 {
+    height: 90vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 2vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 5vw;
+}
+section-2:first-of-type {
+    text-transform: uppercase;
+    font-size: 1vw;
+}
+section-2:first-of-type, section.pop {
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+section-2:nth-of-type(even) {
+    background: #fff;
+}
+section-2:nth-of-type(1) {
+    background-image: url(images/course3.jpg);
+}
+
+section-2 h4{
+    color: #fff;
+    text-align: justify;
+    text-shadow: 5px 5px black;
+    font-size: 15px;
+}
+
+/* Texte animé Accueil */
+.ml6 {
+    position: relative;
+    font-weight: 900;
+    font-size: 3.3em;
+    text-align: center;
+    
+    
+    color: rgba(255, 255, 255, 0.473);
+  }
+  
+  .ml6 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+  .ml6 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+  
+/* images centrées accueil */
+
+.sport img{
+    width: 150px;
+    height: 150px;
+    margin-top: 100px;
+    display: inline-block;
+    
+    margin-left: 175px;
+    
+        
+}
+@media screen and (min-width: 401px) and (max-width: 1280px) {
+    .sport img {
+        margin-left: 400px;
+       
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .sport img {
+        margin-left: 55px;
+    }
+  }
+
+
+
+/*texte 2 sur image page d'accueil */
+
+
+
+
+section h1{
+    text-align: center;
+
+    
+}
+.popo{
+    margin-top: 100px;
+    color: #696969;
+    font-size: 1.2vw;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 1280px){
+    .popo p{
+        width : 100%;
+        font-size:20px;
+    }
+    .popo h1{
+        font-size: 20px;
+    }
+    .popo h2{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .popo p{
+        width : 100%;
+        font-size:15px;
+        margin-top: 25px;
+    }
+    .popo h1{
+        font-size: 20px;
+    }
+    .popo h2{
+        font-size: 20px;
+    }
+}
+
+
+
+/* page à propos */
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.column{
+    text-align: center;
+    width: 35%;
+    color: #82817f;
+    margin-left: 10px;
+    margin-right: 40px;
+    
+}
+
+
+
+.column img{
+
+    
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 601px) and (max-width: 1280px) {
+    .column img {
+        width: 200px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .column img {
+        width: 200px;
+        text-align: justify;
+        font-size: 20px;
+        display:inline-block;
+        width: 100%;
+        
+    }
+  }
+
+.column p{
+    text-align: justify;
+    font-size: 20px;
+}
+@media screen and (min-width: 401px) and (max-width: 1280px) {
+    .column p {
+        width: 400px;
+        margin-right: 40px;
+        
+        margin-left: 20px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .column p {
+        width: 400px;
+        margin-left: 0px;
+    }
+  }
+
+section-7 h1{
+        color: gray;
+        margin-top: 20px;
+        margin-bottom: 10px;
+}  
+#div1, #div2, #div3 {
+    display: inline-block;
+    width: 30%;
+    height: 100px;
+    text-align: justify;
+    margin: 1%;
+    color: gray;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+#div1 img{
+    width: 30%;
+
+}
+#div2 img{
+    width: 30%;
+}
+#div3 img{
+    width: 30%;
+}
+
+@media screen and (max-width: 680px){
+    #div1, #div2, #div3 {
+        width: 90%;
+        border-right: none;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    
+}
+
+.forme{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: gray;
+}
+
+
+
+
+.sticky img{
+    width: 6vw;
+    height: 6vw;
+
+}
+
+
+.asso img{
+
+    width: 400px;
+    height: 300px;
+}
+
+
+/* page Article */
+.foot{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.foot h1{
+    color: gray;
+}
+ 
+
+.block {
+    display:flex;
+    width: 50%;
+    margin-left: 20%;
+  }
+.textes,.block img {
+    margin:auto;
+    padding:5px;
+  }
+.block img {
+    order:1;
+    width:500px;
+    height:250px;
+  } 
+
+.texte {
+position:relative;
+width:300px;
+z-index:10;
+
+} 
+
+
+
+.foot p{
+    margin-left: 400px;
+    margin-right: 400px;
+    text-align: justify;
+}
+@media screen and (min-width: 301px) and (max-width: 1280px) {
+    .foot p{
+        width: 300px;
+        margin-right: 40px;
+        
+        margin-left: 20px;
+    }
+  }
+  @media screen and (max-width: 300px) {
+    .foot p{
+        width: 300px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+  }
+
+
+.foot img{
+    width: 500px;
+    height: 400px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+
+}
+
+@media screen and (min-width: 401px) and (max-width: 1280px) {
+    .foot img{
+        width: 300px;
+        margin-right: 40px;
+        
+        margin-left: 20px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .foot img{
+        width: 300px;
+        margin-left: 20px;
+    }
+  }
+
+
+
+
+/* Page association */
+.asso{
+    text-align: justify;
+    margin-left: 25%;
+    margin-right: 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 50vw;
+}
+.col{
+    color: #696969;
+}
+
+
+.container-b{
+    border: 10px dashed gray;
+    border-radius: 15px;
+}
+.container-b h3, h4{
+    margin-left: 20px;
+    text-align: justify;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.asso h2{
+    text-align: center;
+    color: #696969;
+    margin-top: 50px;
+    
+}
+
+.asso p{
+    margin-bottom: 50px;
+}
+
+/* Arrière plan page Association */
+.cla{
+    background-color: rgb(249, 250, 252);
+    
+}
+/* Aller à la page précédente page Association */
+.clo button{
+    width: 250px;
+    height: auto;
+    margin-top: 50px;
+    color: gray;
+    border-radius: 25px;
+    border-color: gray;
+}
+
+@media screen and (min-width: 401px) and (max-width: 1280px) {
+    .clo button {
+        width: 250px;
+        margin-right: 40px;
+        
+        margin-left: 20px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .clo button {
+        width: 200px;
+        margin-left: 20px;
+    }
+  }
+
+
+
+
+/* footer */
+.foote {
+    padding: 15px 10px;
+    margin: auto;
+    color: rgb(88, 85, 85);
+    text-align: center;
+    margin-top: none;
+}
+.foote a{
+    color: gray;
+}
+
+.foote h3 {
+    font-size: 200%;
+    color: gray;
+}
+
+.foote p {
+    
+    color: gray;
+}
+
+.foote-text {
+    font-weight: bold;
+}
+
+hr {
+    width: 50%;
+    color: rgba(199, 199, 199, 0.178); /* POUR METTRE UN TRAIT APRES CONTACT */
+    margin-left: 400px;
+    
+}
+
+section-5 h1{
+    color: #696969;
+    margin-top: 100px;
+      
+}
+
+footer{
+    background-color: #edca9f;
+    height: 430px;
+    box-shadow: 10px 10px 10px 10px brown;
+}
+
+.navi ul {
+    padding:0;
+    margin:0;
+    list-style-type:none;
+    margin-left: 32%;
+
+    }
+   .navi li {
+    margin-left:2px;
+    float:left; /*pour IE*/
+    }
+    .navi ul li a {
+    display:block;
+    float:left;   
+    width:100px;
+    background-color:#A0522D;
+    color:white;
+    text-decoration:none;
+    text-align:center;
+    padding:5px;
+    border:2px solid;
+    /*pour avoir un effet "outset" avec IE :*/
+    border-color:#DCDCDC #696969 #696969 #DCDCDC;
+    
+    }
+    .navi ul li a:hover {
+    background-color:#D3D3D3;
+    border-color:#696969 #DCDCDC #DCDCDC #696969;
+    } 
+
+
+/* Carte page contact */
+.map{
+    text-align: center;
+    margin-bottom: 100px;
+    width: 100%;
+    height: auto;
+   
+}
+
+
+/* formulaire page contact */
+.forme{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: gray;
+}
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    height: 270px;
+    margin-right: 13%;
+    margin-left: 13%;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 60%;
+    margin-top: 6px;
+  }
+  button{
+      margin-left: 40px;
+      width: 100px;
+      height: 50px;
+  }
+  
+  /* Effacer les flotteurs après les colonnes */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Disposition réactive - lorsque l'écran mesure moins de 600 pixels de large, faites en sorte que les deux colonnes s'empilent l'une sur l'autre plutôt que l'une à côté de l'autre */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  section-6 .container{
+      margin-bottom: 50px;
+      border-radius: 20px;
+  }
+  
+  
+  
